@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "charts-fun",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "charts-fun",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "charts-fun",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

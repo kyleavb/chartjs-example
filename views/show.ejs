@@ -1,0 +1,13 @@
+<h1>Survey: <%= data[0].survey %></h1>
+
+<canvas id='myChart' width='400' height='400'></canvas>
+
+<h4>Data Points</h4>
+<% data.forEach(function(item, i){ %>
+    <div>
+        <p><%= item.name %> said: <%= item.answer %></p>
+    </div>    
+<% }) %>
+<script> var data = <%- JSON.stringify(data) %>; </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js'></script>
+<script src='/js/script.js'></script>
